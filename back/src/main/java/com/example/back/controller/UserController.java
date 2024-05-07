@@ -67,7 +67,7 @@ public class UserController {
 
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/user/update/{id}")
     public User queryId(@PathVariable int id){
         User list =  userMapper.selectById(id);
         System.out.println(list);
